@@ -1,0 +1,19 @@
+#This will be the main playbook
+#Installs, Elasticsearch, Filebeat, Logstash, Kibana
+
+#Install Elastic, Filebeat, Logstash
+
+- name: Install Elastic  
+  import_playbook: ./roles/elasticsearch/defaults/elastic.yml
+
+- name: Install Filebeat
+  import_playbook: ./roles/filebeat/defaults/filebeat.yml
+
+- name: Install Logstash
+  import_playbook: ./roles/logstash/defaults/logstash.yml
+
+
+#Install Kibana
+
+- name: Install Kibana
+  import_playbook: ./roles/kibana/defaults/kibana.yml
