@@ -6,10 +6,10 @@ Installs ELK and other cools ELK related things.
 
 Please install, on the host which will be running the playbooks:
 
-ansible-galaxy install elastic.elasticsearch,v7.16.0
-ansible-galaxy install geerlingguy.filebeat
-ansible-galaxy install geerlingguy.kibana
-ansible-galaxy install geerlingguy.logstash
+- ansible-galaxy install elastic.elasticsearch,v7.16.0
+- ansible-galaxy install geerlingguy.filebeat
+- ansible-galaxy install geerlingguy.kibana
+- ansible-galaxy install geerlingguy.logstash
 
 
 ## Getting started
