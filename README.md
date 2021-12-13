@@ -2,6 +2,16 @@
 
 Installs ELK and other cools ELK related things.
 
+# Requirements
+
+Please install, on the host which will be running the playbooks:
+
+ansible-galaxy install elastic.elasticsearch,v7.16.0
+ansible-galaxy install geerlingguy.filebeat
+ansible-galaxy install geerlingguy.kibana
+ansible-galaxy install geerlingguy.logstash
+
+
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
