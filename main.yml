@@ -1,6 +1,11 @@
 #This will be the main playbook
 #Installs, Elasticsearch, Filebeat, Logstash, Kibana
 
+#Install OpenJDK (needed for Plugins)
+
+- name: Install OpenJDK
+  import_playbook: ./roles/java/defaults/java.yml
+
 #Install Elastic, Filebeat, Logstash
 
 - name: Install Elastic  
