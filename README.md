@@ -14,6 +14,13 @@ Please install, on the host which will be running the playbooks:
 
 ## Getting started
 
+Can be forked from:
+
+- https://github.com/geerlingguy/ansible-role-filebeat
+- https://github.com/geerlingguy/ansible-role-logstash
+- https://github.com/geerlingguy/ansible-role-kibana
+- https://github.com/elastic/ansible-elasticsearch 
+
 ### Generating a Self-signed certificate
 
 For utmost security, you should use your own valid certificate and keyfile, and update the logstash_ssl_* variables in your playbook to use your certificate.
