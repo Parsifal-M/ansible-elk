@@ -1,9 +1,0 @@
-# Test playbook
-- hosts: elk_mas_data_nodes
-  remote_user: ansible
-  become: yes
-  roles:
-      - geerlingguy.logstash
-
-- name: Install Logstash
-  import_playbook: ./roles/logstash/defaults/logstash.yml
