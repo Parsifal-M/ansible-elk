@@ -26,8 +26,7 @@
     es_enable_http_ssl: true
     es_enable_transport_ssl: true
     es_ssl_verification_mode: certificate
-    es_ssl_keystore: "~/cfiles/my-keystore.p12"
-    es_ssl_truststore: "~/cfiles/my-ca.p12"
-    es_ssl_keystore_password: ""
-    es_ssl_truststore_password: ""
+    es_ssl_key: "~/keys/certs/ca/ca.key"
+    es_ssl_certificate: "~/keys/certs/ca/ca.crt"
+    es_ssl_password: ""
     es_validate_certs: no
