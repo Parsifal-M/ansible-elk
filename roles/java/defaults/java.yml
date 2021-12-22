@@ -2,10 +2,17 @@
 
 - hosts: elk_nodes
   tasks:
-    - name: Install OpenJDK
+    - name: Install OpenJDK if Debian
+      when: ansible_os_family == 'Debian'
+      become: true
+      apt:
+        state: present
+        name:
+         - java-1.8.0-openjdk
+    - name: Install OpenJDK if Debian
+      when: ansible_os_family == 'RedHat'
       become: true
       yum:
         state: present
         name:
          - java-1.8.0-openjdk
-
