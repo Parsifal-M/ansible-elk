@@ -44,32 +44,4 @@ Once you have generated the certificates, you will need to fill out the playbook
 
 # Roadmap and improvements
 
-A few improvements could be made to the playbooks:
-
-- `30-elasticsearch-output.conf` has to be renamed (or just remove it) to .conf.old otherwise we will get some errors. We keep the input and output in the `01-beats-input.conf` file as such, for this we need to edit the Logstash playbook settings as they are generated based on values given in the playbook.
-
-```
-input {
-  beats {
-    port => 5044
-    client_inactivity_timeout => 300
-    ssl => true
-    ssl_certificate => "/etc/pki/logstash/logstash.crt"
-    ssl_key => "/etc/pki/logstash/logstash.pkcs8.key"
-    ssl_verify_mode => "none"
-    ssl_certificate_authorities => ["/etc/logstash/ca.crt"]
-  }
-}
-
-output {
-  elasticsearch {
-    hosts => ["https://localhost:9200"]
-    index => "%{[@metadata][beat]}-%{+YYYY.MM.dd}"
-    ssl => true
-    ssl_certificate_verification => false
-    cacert => "/etc/logstash/ca.crt"
-    user => 'logstash_writer'
-    password => 'blahblahpassword'
-  }
-}
-```
+Java install will only work on RedHat/CentOs based systems, we could update it to work on any OS Family.

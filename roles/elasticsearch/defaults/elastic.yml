@@ -1,6 +1,6 @@
 - name: Install Elastic with Xpack
   hosts: elk_nodes
-  remote_user: azureuser
+  remote_user: user
   become: yes 
   roles:
     - role: elastic.elasticsearch
@@ -19,14 +19,14 @@
       transport.host: 0.0.0.0
       transport.port: 9300
       bootstrap.memory_lock: false
-    es_api_basic_auth_username: "elastic" # This is the default user created by the installation of elasticsearch
-    es_api_basic_auth_password: "password" # This is the default password created by the installation of elasticsearch
+    es_api_basic_auth_username: "" # This is the default user created by the installation of elasticsearch
+    es_api_basic_auth_password: "" # This is the default password created by the installation of elasticsearch
     es_ssl_upload: true
     es_enable_auto_ssl_configuration: true
     es_enable_http_ssl: true
     es_enable_transport_ssl: true
     es_ssl_verification_mode: certificate
-    es_ssl_key: "~/keys/certs/ca/ca.key"
-    es_ssl_certificate: "~/keys/certs/ca/ca.crt"
+    es_ssl_key: ""
+    es_ssl_certificate: ""
     es_ssl_password: ""
     es_validate_certs: no

@@ -2,7 +2,7 @@
 
 - name: Install Filebeat
   hosts: elk_nodes
-  remote_user: azureuser
+  remote_user: user
   become: yes
   roles:
     - geerlingguy.filebeat
@@ -28,5 +28,5 @@
     filebeat_log_dir: /var/log/filebeat
     filebeat_log_filename: filebeat.log
     filebeat_ssl_dir: /etc/pki/logstash
-    filebeat_ssl_certificate_file: "~/keys/certs/logstash/logstash.crt"
-    filebeat_ssl_key_file: "~/keys/certs/logstash/logstash.key"
+    filebeat_ssl_certificate_file: ""
+    filebeat_ssl_key_file: ""
