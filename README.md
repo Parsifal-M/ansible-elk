@@ -41,7 +41,3 @@ Follow this link for another guide on how to create the certificates:
 https://www.elastic.co/blog/configuring-ssl-tls-and-https-to-secure-elasticsearch-kibana-beats-and-logstash#create-ssl
 
 Once you have generated the certificates, you will need to fill out the playbooks accordingly.
-
-# Roadmap and improvements
-
-Java install will only work on RedHat/CentOs based systems, we could update it to work on any OS Family.
