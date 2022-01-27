@@ -4,22 +4,12 @@ Installs ELK and other cools ELK related things.
 
 # Requirements
 
-Please install, on the host which will be running the playbooks:
-
-- `ansible-galaxy install elastic.elasticsearch,v7.16.0`
-- `ansible-galaxy install geerlingguy.filebeat`
-- `ansible-galaxy install geerlingguy.kibana`
-- `ansible-galaxy install geerlingguy.logstash`
+To Do
 
 
 ## Getting started
 
-Can be forked from:
-
-- https://github.com/geerlingguy/ansible-role-filebeat
-- https://github.com/geerlingguy/ansible-role-logstash
-- https://github.com/geerlingguy/ansible-role-kibana
-- https://github.com/elastic/ansible-elasticsearch 
+To Do
 
 ### Generating a Self-signed certificate
 
